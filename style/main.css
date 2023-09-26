@@ -1,3 +1,12 @@
+/* font-face */
+
+@font-face {
+    font-family: "NewYeNian";
+    src: url("/assets/fonts/NewYeNian.otf");
+}
+
+/* page content */
+
 #nav-list {
     margin-top: -60px;
     padding-bottom: 13px;
@@ -59,7 +68,7 @@
     height: 100%;
     width: 100%;
     margin-top: 36px;
-    padding: 96px 0;
+    padding: 72px 0;
 }
 
 .title-container h1{
@@ -70,9 +79,9 @@
 
 .highlight {
     text-decoration: underline;
-    text-decoration-thickness: 0.5em;
+    text-decoration-thickness: 0.4em;
     text-decoration-color: #ffe40066;
-    text-underline-offset: -0.2em;
+    text-underline-offset: -0.3em;
     text-decoration-skip-ink: none;
 }
 
@@ -124,8 +133,9 @@ a{
 }
 
 .card{
-    border-radius: 20px;
+    border-radius: 10px;
     border-color: #00000000;
+    box-shadow: 0px 0px 2px #00000010;
     background-color: #ffffff;
 }
 
@@ -135,12 +145,19 @@ a{
     border: #000000;
     color: white;
     font-size: small;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    /* font-weight: bold; */
+    padding-top: 4px;
+    padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     margin-left: 13rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 3px #00000010;
+    transition: all 0.2s;
 }
 
 footer{
@@ -148,5 +165,5 @@ footer{
 }
 
 .card-title{
-    font-weight: bold;
+    font-weight: bolder;
 }
