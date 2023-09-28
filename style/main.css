@@ -5,7 +5,16 @@
     src: url("/assets/fonts/NewYeNian.otf");
 }
 
+@font-face {
+    font-family: "HandWritting";
+    src: url("/assets/fonts/Handwriting.ttf") format('font/ttf');
+}
+
 /* page content */
+
+.hand-written, .card-title{
+    font-family: "NewYeNian";
+}
 
 #nav-list {
     margin-top: -60px;
@@ -73,7 +82,7 @@
 
 .title-container h1{
     font-size: 500%;
-    color: #d11a2d;
+    /* color: #d11a2d; */
     font-weight: bolder;
 }
 
@@ -112,7 +121,12 @@ body{
     margin-top: 30px;
 }
 
+.info-title{
+    font-size: 35px;
+}
+
 .app-info{
+    /* font-size: 20px; */
     margin-top: 20px;
 }
 
@@ -165,5 +179,12 @@ footer{
 }
 
 .card-title{
+    font-size: 25px;
     font-weight: bolder;
+}
+
+.info-text, .card-text{
+    /* font-family: 'NewYeNian'; */
+    /* font-size: 18px; */
+    /* font-weight: 500; */
 }
