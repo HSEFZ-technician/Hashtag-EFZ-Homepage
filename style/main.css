@@ -94,15 +94,6 @@
     text-decoration-skip-ink: none;
 }
 
-.highlight-1{
-    margin-top: 100px;
-    text-decoration: underline;
-    text-decoration-thickness: 0.4em;
-    text-decoration-color: #ffe40066;
-    text-underline-offset: -0.3em;
-    text-decoration-skip-ink: none;
-}
-
 .container{
     margin: 36px auto;
 }
