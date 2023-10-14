@@ -5,51 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="style/main.css" rel="stylesheet">
+    <link href="./style/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/mobile.css" media="screen and (max-device-width: 600px)">
+    <link rel="stylesheet" href="./style/tablet.css" media="screen and (min-device-width: 600px) and (max-device-width: 1400px)">
+    
     <title>#EFZ 数字生活</title>
 </head>
 <body>
   <div class="container">
     <main id="main" class="main">
       <div class="title-container">
-          <h1 class="highlight hand-written">#EFZ 数字生活</h1>
+          <h1 class="highlight hand-written" id="page-title">#EFZ 数字生活</h1>
           <div class="info-area">
             <!-- <h4 class="info-title hand-written">#EFZ</h4> -->
-            <p class="info-text">由社团联技术顾问开发，我们的使命是构建一个让全校学生满意的数字平台！<br>本网站目前由 <a href="dengchenluo@hsefz.cn" class="name-link">2507 满五</a> 维护/开发，若有问题，请及时反馈。</p>
+            <div class="info-text">由社团联技术顾问开发，我们的使命是构建一个让全校学生满意的数字平台！<br>本网站目前由 <a href="dengchenluo@hsefz.cn" class="name-link">2507 满五</a> 维护/开发，若有问题，请及时反馈。</div>
           </div>
+          <img src="./images/title_rainbow.png" id="img-title" alt="">
       </div>
     </main>
     <section id="apps">
-      <h2 class="highlight hand-written title-sm">我们的应用</h2>
-      <p class="app-info info-text">目前，技术顾问团队已经开发机选系统、社团年鉴、校内志愿者课时查询等应用。</p>
+      <div id="application-title-container">
+        <h2 class="highlight hand-written title-sm" id="application-title">我们的应用</h2>
+        <img src="./images/swing.png" id="img-apps-swing" alt="">
+        <div class="app-info info-text">目前，技术顾问团队已经开发机选系统、社团年鉴、校内志愿者课时查询等应用。</div>
+        <!-- <img src="./images/apps_digital_life.png" id="img-apps-digital_life" alt=""> -->
+     </div>
       <div class="row app-cards row-cols-auto">
         <div class="col">
-          <div class="card app-card-instance">
+          <div class="card app-card-instance" id="app-card-selection" onclick="location.href='./'">
             <div class="card-body">
               <h5 class="card-title">机选系统</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">/selection</h6>
+              <img src="./images/apps_corner_planet.png" class="img-apps-selection-corner" alt="">
               <p class="card-text">由 <a class="name-link" href="https://www.xiaoyaowudi.com/">2409 xiaoyaowudi</a> 开发的网站，后来 <a class="name-link" href="https://aeilot.top/">2507 满五</a> 进行了重新设计和优化。为同学提供社团、志愿者服务队、导师的抢选服务。</p>
-              <a href="#" class="card-link">打开</a>
+              <!-- <a href="#" class="card-link">打开</a> -->
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card app-card-instance">
+          <div class="card app-card-instance" id="app-card-yearbook">
             <div class="card-body">
               <h5 class="card-title">社团年鉴</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">/yearbook</h6>
+              <img src="./images/apps_corner_book.png" class="img-apps-selection-corner" style="margin-right: 7px" alt="">
               <p class="card-text"><a href="https://aeilot.top/" class="name-link">2507 满五</a> 开发，基于 Notion。各社团骨干成员已经在上面发布了各自的制作精美的社团年鉴，供大家查看。</p>
-              <a href="#" class="card-link">打开</a>
+              <!-- <a href="#" class="card-link">打开</a> -->
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card app-card-instance">
+          <div class="card app-card-instance" id="app-card-volunteer">
             <div class="card-body">
               <h5 class="card-title">校内志愿者课时查询</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">/volunteer</h6>
+              <img src="./images/apps_corner_key.png" class="img-apps-selection-corner" style="height: 70px" alt="">
               <p class="card-text"><a href="https://aeilot.top/" class="name-link">2507 满五</a> 开发，26届干事优化。方便同学查看校内志愿者课时数，同时减轻了志愿者服务部同学的工作负担。</p>
-              <a href="#" class="card-link">打开</a>
+              <!-- <a href="#" class="card-link">打开</a> -->
             </div>
           </div>
         </div>
@@ -74,44 +85,7 @@
         </div>
       </div>
     </section>
-    <!-- <footer>
-      <p>华东师范大学第二附属中学版权所有</p>
-    </footer> -->
     </div>
   </div>
-
-
-
-    <!-- <div>
-        <ul>
-        <il>
-        <span>
-            <img scr="" alt="search/guide/..." style="">
-         
-        </span>
-        </il>
-        <il>
-        <span><img scr="" alt="menu/help/..." style="">
-        </span>
-    </il>
-    </ul>
-    </div>
-    <h1>EFZ数字生活</h1>
-
-    <ul>
-    <il>
-        <span>
-    <a href="..."><button>机选</button></a>
-        </span>
-    </il>
-    <il>
-        <span>
-    <a href="..."><button>志愿者课时查询</button></a> 
-        </span>
-    </il>
-    </ul>
-    <footer>
-        <p>华东师范大学第二附属中学版权所有</p>
-    </footer> -->
 </body>
 </html>
