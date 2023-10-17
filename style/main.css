@@ -5,11 +5,6 @@
     src: url("/assets/fonts/NewYeNian.otf");
 }
 
-@font-face {
-    font-family: "HandWritting";
-    src: url("/assets/fonts/Handwriting.ttf") format('font/ttf');
-}
-
 /* page content */
 
 .hand-written, .card-title{
